@@ -1,8 +1,11 @@
 $(document).ready(function (params) {
   $(".sf-with-ul").hover(function (params) {
-    console.log("hello");
     $(this).siblings("ul").fadeToggle();
   });
+
+  $(".sf-with-ul").siblings("ul").hover(function () {
+    $(this).fadeToggle();
+});
 
   $(".carousel").owlCarousel({
     margin: 20,
